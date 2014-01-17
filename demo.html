@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Dynamic Input Width jQuery Plugin Demo</title>
+		<script src="jquery-2.0.3.min.js"></script>
+		<script src="diw.min.js"></script>
+		<script>
+		$(function(){
+			$("input#dynamicTest").dynamicInputWidth().on("input", $.fn.dynamicInputWidth);
+		});
+		</script>
+		<style>
+		input{
+			margin: 100px auto;
+			display: block;
+			border: 2px solid #ccc;
+			padding: 4px 12px;
+			border-radius: 20px;
+			font-size:50px;
+			padding: 10px;
+		}
+		</style>
+	</head>
+	<body>
+		<input type="text" id="dynamicTest" placeholder="Placeholder Text!">
+	</body>
+</html>
